@@ -3,4 +3,5 @@ def call() {
   library('mpl')
   MPLModulesPath('com/company/nestedlib')
   echo "From MPLInit file call method"
+  MPLPipeline{}
 }
