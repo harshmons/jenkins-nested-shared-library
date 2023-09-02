@@ -1,5 +1,9 @@
 if( CFG.'git.url' )
   MPLModule('Git Checkout', CFG)
-else
+else{
   echo "I am from Chekcout Nested lib"
-  MPLModule('Default Checkout', CFG)
+MPLModulePostStep {
+  echo "I am from Post step"
+}  
+MPLModule('Default Checkout', CFG)
+}
